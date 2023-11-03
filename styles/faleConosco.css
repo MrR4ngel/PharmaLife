@@ -1,0 +1,26 @@
+.body__faleConosco {
+    background-image: var(--azul-degrade);
+}
+
+.formulario__item {
+    padding: 5px;
+
+}
+
+.formulario {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color:var(--branco);
+    border-radius: 15px;
+    padding: 2em;
+}
+
+.enviar {
+    background-color: var(--azul-degrade); 
+    width: 100%;
+    border-radius: 10px;
+    color: var(--preto);
+    cursor: pointer;
+}

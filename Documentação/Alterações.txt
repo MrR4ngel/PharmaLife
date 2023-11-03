@@ -1,0 +1,1 @@
+Boa noite mestre, fiz as seguintes alterações: Criei o ator entregador, adicionei o estoque, coloque as opções de entrega e adicionei o gerente de estoque. Também criei o diagrama do DER, me baseei em um que eu já tinha feito. Se precisar fazer em outro modelo é só dar um alô. 

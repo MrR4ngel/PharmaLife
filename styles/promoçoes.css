@@ -1,0 +1,30 @@
+ /* Estilos CSS para a seção de produtos */
+ .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #e74c3c; /* Cor para o preço do produto */
+}

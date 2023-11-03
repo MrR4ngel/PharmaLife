@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaLife - Fale conosco</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="body__faleConosco">
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__label">
+                <span class="header__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <img src="/img/logo.png" alt="logo da PharmaLife" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Pharma</b>Life</h1>
+        </div>
+
+        <ul class="options">
+            <input type="checkbox" id="options__menu" class="options__button">
+            <label for="options__menu" class="options__label">
+                <li class="options__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Medicamentos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Perfumaria</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Higiene Pessoal</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Baby</a>
+                </li>
+                
+            </ul>
+            <li class="options__item"><a href="/pages/produtos.html" class="options__link">Promoções</a></li>
+            <li class="options__item"><a href="/index.html" class="options__link">Home</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#">
+                <img src="/img/Favoritos.svg" alt="Meus favoritos" class="container__imagem-transparente container__imagem" >
+            </a>
+            <a href="#" class="container__link">
+                <img src="/img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="/pages/login.html" class="container__link">
+                <img src="/img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    
+    <main class="style-contato">  
+            <form>
+                <div class="formulario">
+                    <div class="formulario__item">
+                        <label for="NomeSobrenome">Nome e Sobrenome</label>
+                        <input type="text" id="NomeSobrenome" class="input-padrao" required>
+                    </div>
+                    
+                    <div class="formulario__item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="example@domain.com">
+                    </div>
+
+                    <div class="formulario__item">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
+
+                    <div class="formulario__item">
+                        <div class="formulario__item">
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <div class="formulario__item">
+                            <textarea cols="50" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                        </div>
+                    </div>
+
+                <div class="formulario__item">
+                    <fieldset>
+                        <legend>Como prefere o nosso contato</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                        
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                                    
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                    </fieldset>    
+                    </div>
+                
+                <div class="formulario__item">
+                    <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option></option>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="formulario__item">
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                </div>
+                <div class="formulario__item">
+                    <input type="submit" value="Enviar Formulário" class="enviar">
+                </div>
+            </div>
+            </form>
+        
+        <!-- <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Segunda</th>
+                        <th>08h ~ 20h</th>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </main>
+    </body>
+</html>
