@@ -1,5 +1,5 @@
 <?php
-// Conexão com o banco de dados (substitua com suas configurações)
+// Conexão com o banco de dados
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 // Consulta para buscar produtos no banco de dados
-$sql = "SELECT idProduto, nome, descricao, preco, estoque, categoria FROM Produto";
+$sql = "SELECT idProduto, nome, descricao, preco, estoque, idCategoria, imagem FROM Produto";
 $result = $conn->query($sql);
 
 // Exibe os produtos na página
@@ -23,7 +23,8 @@ if ($result->num_rows > 0) {
         echo "Descrição: " . $row["descricao"] . "<br>";
         echo "Preço: " . $row["preco"] . "<br>";
         echo "Estoque: " . $row["estoque"] . "<br>";
-        echo "Categoria: " . $row["categoria"] . "<br>";
+        echo "Categoria: " . $row["idCategoria"] . "<br>";
+        echo "Imagem: " . $row["imagem"] . "<br>";
         echo "<hr>";
     }
 } else {
