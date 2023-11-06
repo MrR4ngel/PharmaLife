@@ -1,4 +1,6 @@
 <?php
+
+/*
 function conectarAoBanco() {
    global $servername, $username, $password, $dbname;
 
@@ -12,4 +14,24 @@ function conectarAoBanco() {
 
    return $conn;
 }
+?>
+
+<?php
+*/
+class Conexao {
+    private $host = "localhost";
+    private $usuario = "root";
+    private $senha = "";
+    private $banco = "pharmalife";
+    private $conexao;
+
+    public function __construct() {
+        $this->conexao = new mysqli($this->host, $this->usuario, $this->senha, $this->banco);
+
+        if ($this->conexao->connect_error) {
+            die("Erro na conexão com o banco de dados: " . $this->conexao->connect_error);
+        }
+    }
+}
+
 ?>

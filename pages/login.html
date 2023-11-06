@@ -100,13 +100,15 @@
 <body class="body__login">
     <div class="tela__login">
         <form>
-            <label for="usuario">Usuário</label>
-            <input type="text" id="userId" class="input-padrao" required placeholder="usuario">
-            <br></br>
-            <label for="senha">Senha</label>
-            <input type="password" id="email" class="input-padrao" required placeholder="digite sua senha">
-            <br></br>
-            <input type="submit" value="Enviar" class="enviar">
+            <form method="post" action="login.php">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" required><br>
+                <label for "senha">Senha:</label>
+                <input type="password" name="senha" required><br>
+                <input type="submit" value="Login">
+            </form>
+        
+            <?php if (isset($erroLogin)) { echo "<p>$erroLogin</p>"; } ?>
         </form>
     </div> 
 
